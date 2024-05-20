@@ -41,7 +41,7 @@
   
   .image-container {
     width: 100%;
-    min-height: 200px; /* Placeholder height */
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;

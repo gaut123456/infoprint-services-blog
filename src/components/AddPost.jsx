@@ -2,10 +2,10 @@
 import { useState } from 'react';
 import { db, storage } from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'; // Ensure ref is imported
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import Modal from 'react-modal';
 import PropTypes from 'prop-types';
-import './AddPost.css'; // Import the CSS file for styling
+import './AddPost.css'; 
 
 const AddPost = ({ isOpen, onRequestClose }) => {
   const [nom, setNom] = useState('');
@@ -27,7 +27,7 @@ const AddPost = ({ isOpen, onRequestClose }) => {
     setDescription('');
     setPhoto(null);
     onRequestClose();
-    window.location.reload(); // Reload the page after adding the post
+    window.location.reload();
   };
 
   const handlePhotoChange = (e) => {

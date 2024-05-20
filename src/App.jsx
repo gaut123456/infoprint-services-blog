@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Blog from './components/Blog';
 import AddPost from './components/AddPost';
-import './App.css';  // Import the CSS file
+import './App.css';
 
 const App = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
