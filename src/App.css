@@ -1,0 +1,33 @@
+/* src/App.css */
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Arial, sans-serif';
+}
+
+.app-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-post-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-post-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.add-post-button:focus {
+  outline: none;
+}
