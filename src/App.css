@@ -1,43 +1,41 @@
-/* src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+}
 
 .app-container {
   text-align: center;
-  padding: 20px;
-  font-family: 'Roboto', sans-serif;
+  padding: 0; /* Remove padding to focus on header spacing */
+}
+
+.app-header {
+  padding: 10px 0; /* Uniform padding for top and bottom */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .app-title {
-  font-size: 3em;
-  margin-bottom: 10px;
+  font-size: 2em;
   color: #333;
-}
-
-.blog-description {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.2em;
-  color: #555;
+  margin: 0;
 }
 
 .add-post-button {
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 1.2em;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: 'Roboto', sans-serif;
+  margin-top: 20px; /* Add margin to separate from content */
 }
 
 .add-post-button:hover {
-  background-color: #0056b3;
+  background-color: #218838;
   transform: scale(1.05);
 }
 

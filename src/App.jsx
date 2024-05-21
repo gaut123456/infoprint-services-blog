@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useState } from 'react';
 import Blog from './components/Blog';
 import AddPost from './components/AddPost';
@@ -9,10 +8,14 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1 className="app-title">InfoPrint Services Blog</h1>
-      <Blog />
-      <button className="add-post-button" onClick={() => setModalIsOpen(true)}>Ajouter un Post</button>
-      <AddPost isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} />
+      <header className="app-header">
+        <h1 className="app-title">InfoPrint Services Blog</h1>
+      </header>
+      <main>
+        <Blog />
+        <button className="add-post-button" onClick={() => setModalIsOpen(true)}>Ajouter un Post</button>
+        <AddPost isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} />
+      </main>
     </div>
   );
 };
